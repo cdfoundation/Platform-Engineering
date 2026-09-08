@@ -1,0 +1,73 @@
+﻿Platform Engineering SIG Charter
+Continuous Delivery Foundation (CDF) — Special Interest Group Status: Draft v0.1 — for review by initial members and the CDF TOC Repository: cdfoundation/Platform-Engineering
+1. Mission
+The Platform Engineering SIG exists to advance the practice of platform engineering within the CI/CD ecosystem by building, operating, and sharing knowledge about internal developer platforms (IDPs) that let application teams ship software safely and quickly through self-service, golden paths, and paved roads. The SIG approaches this work with a security-first mindset, treating secure-by-default design as a baseline requirement of any platform rather than an afterthought, and actively leverages the latest AI technology to accelerate platform engineering practice from AI-assisted platform tooling and automation to AI-accelerated development of golden paths and self-service workflows.
+2. Scope
+In scope:
+
+
+* Internal developer platform (IDP) design patterns and reference architectures, built to a security-first standard (secure defaults, least privilege, and supply-chain integrity as baseline design requirements)
+* Golden paths / paved roads for build, test, deploy, and release workflows
+* Developer self-service tooling and platform-as-a-product practices
+* Developer experience (DX) and platform adoption metrics
+* Applying AI technology to accelerate platform engineering 
+   * AI-assisted tooling, automation, and AI-accelerated development of golden paths, self-service workflows, and platform operations
+* Mapping open-source platform engineering tools to CDF and adjacent (CNCF, OpenSSF) projects
+* Best practices, reference implementations, and educational content for platform teams
+
+
+Out of scope:
+
+
+* Vendor or product endorsements
+* Duplicating the mandate of other CDF SIGs (e.g., security guidance owned by the CI/CD Cybersecurity initiative, interoperability standards owned by the Interoperability SIG) — the SIG coordinates with those groups rather than replacing them
+* Formal standards-setting (may be proposed later as a graduation path, per the TOC's project lifecycle)
+3. Goals and Deliverables
+* A public reference guide / knowledge base for platform engineering practices, published via this repository
+* Curated mapping of open-source platform engineering tooling relevant to Platform Engineering
+* Regular case studies or talks from member organizations running internal platforms
+* Quarterly progress updates to the CDF TOC mailing list, per TOC requirements
+4. Governance
+TOC Sponsor
+A CDF TOC member sponsors the SIG, monitors its progress, and is the escalation point for resourcing or attendance issues. Sponsor: Tracy Ragan (DeployHub)
+Chairs
+The SIG is led by one or more chairs who set the meeting agenda, drive the roadmap, and represent the SIG to the TOC. Per CDF policy, chairs rotate at least bi-annually to ensure neutral leadership. Chair: Jennifer Mulford, Senior Platform Security Engineer (Okta)
+Decision Making
+The SIG operates by lazy consensus among active members. Where consensus cannot be reached, the chair(s) make the final call, escalating to the TOC sponsor if needed. Major changes to this charter require majority agreement among active members and sign-off from the TOC sponsor.
+5. Membership
+Membership is open to any individual or organization interested in the SIG's mission — no CDF membership is required to participate. Per CDF SIG policy, the initial proposal must show participation from at least three different companies.
+
+
+Initial members:
+
+
+* Jennifer Mulford, Senior Platform Security Engineer, Okta (Chair)
+* Brittney Rincon, DevOps Engineer, Associa
+* Sergiu Cazacu, IT Infrastructure Lead, Santa Fe Irrigation District
+
+
+(Meets the CDF requirement of at least 3 different companies represented among initial members: Okta, Associa, Santa Fe Irrigation District.)
+6. Meetings
+* Cadence: Biweekly
+* Format: Public video call, notes and recordings published to the SIG repository
+* Sample agenda: Announcements → review of open issues/PRs → topic discussion or member presentation → action items
+7. Communication Channels
+* GitHub: cdfoundation/Platform-Engineering (issues, discussions, docs)
+* Slack: CDF Slack, channel #sig-platform-engineering [create/confirm]
+* Mailing list: cdf-sig-platform-engineering@list.cd.foundation [create/confirm, per TOC naming convention]
+8. Resources Requested from CDF
+* GitHub repository - cdfoundation/Platform-Engineering
+* Slack channel #sig-platform-engineering
+* Mailing list - 
+* Recurring meeting infrastructure (calendar, video conferencing)
+9. Code of Conduct
+All SIG activities are governed by the CDF Code of Conduct.
+10. Disbandment
+Per CDF TOC policy, the SIG may be disbanded if:
+
+
+* Its goals have been accomplished or it is no longer relevant
+* The TOC sponsor determines it is no longer effective
+* Participation consistently drops below three participating companies
+11. Amendments
+This charter may be amended by consensus of active SIG members, with notice to and approval from the CDF TOC sponsor.
