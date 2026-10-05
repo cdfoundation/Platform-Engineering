@@ -100,10 +100,10 @@ The SIG meets on a regular cadence (frequency to be confirmed at charter ratific
 
 ### Communication Channels
 
-- **Slack**: CDF Slack workspace *(channel to be created)*
-- **Mailing List**: *(to be created at lists.cd.foundation)*
+- **Slack**: [CDF Slack workspace](https://join.slack.com/t/cdeliveryfdn/shared_invite/zt-44c6rpi1z-dFDPNRchD37ehiyB6QcdnQ) #platform-engineering-sig
+- **Mailing List**: [View here](https://lists.cd.foundation/g/sig-platform-engineering)
 - **GitHub**: [https://github.com/cdfoundation/sig-platform-engineering](https://github.com/cdfoundation/sig-platform-engineering) *(pending repository creation)*
-- **Meeting Notes**: Linked from the SIG repository
+- **Meeting Notes**: [View notes](https://docs.google.com/document/d/1rLoM8gbi0pZBRy1z7bSMm0DnDoQJ3bQzYYAMZUV-2Bg/edit?usp=drive_link)
 
 ## Leadership
 
@@ -120,8 +120,7 @@ The Chair is responsible for:
 - Coordinating with other CDF SIGs and projects
 
 ### TOC Sponsor
-
-*To be confirmed*
+Tracy Ragan, DeployHub
 
 ### Initial Committers
 
