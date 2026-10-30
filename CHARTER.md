@@ -120,29 +120,33 @@ The Chair is responsible for:
 - Coordinating with other CDF SIGs and projects
 
 ### TOC Sponsor
+
 Tracy Ragan, DeployHub
 
 ### Initial Committers
 
 | Name | GitHub | Affiliation |
-|------|--------|-------------|
+| --- | --- | --- |
 | Jennifer Mulford | [@jenmmulford](https://github.com/jenmmulford) | Okta |
 | [Name] | [@handle] | [Affiliation] |
 
 ## Initial Roadmap
 
 ### Phase 1 — Foundation
+
 - Establish SIG governance: mailing list, Slack channel, GitHub repository, meeting cadence
 - Recruit initial members and define contribution model
 - Draft and ratify the Platform Engineering Guide outline
 - Publish first set of core platform engineering patterns
 
 ### Phase 2 — Guide Development
+
 - Develop and publish Platform Engineering Guide sections covering IDP foundations, CI/CD integration patterns, and developer experience frameworks
 - Document integration patterns for key CDF projects
 - Publish Platform Engineering Maturity Model (v1)
 
 ### Phase 3 — Community Growth and Iteration
+
 - Iterate guide content based on community feedback and industry evolution
 - Expand reference architectures and golden path templates
 - Engage CDF End User Council for practitioner feedback
