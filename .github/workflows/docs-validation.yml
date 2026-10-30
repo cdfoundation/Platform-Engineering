@@ -1,0 +1,67 @@
+name: Docs validation
+
+on:
+  pull_request:
+    paths:
+      - "**/*.md"
+      - ".markdownlint-cli2.jsonc"
+      - ".github/workflows/docs-validation.yml"
+  push:
+    branches: [main]
+    paths:
+      - "**/*.md"
+      - ".markdownlint-cli2.jsonc"
+      - ".github/workflows/docs-validation.yml"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: docs-validation-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  markdownlint:
+    name: Markdown lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Run markdownlint
+        run: npx --yes markdownlint-cli2@0.24.0
+
+  mermaid:
+    name: Mermaid diagrams
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Render every Mermaid diagram
+        run: |
+          set -euo pipefail
+
+          tmp="$(mktemp -d)"
+          failed=0
+
+          while IFS= read -r file; do
+            slug="$(printf '%s' "$file" | tr '/ ' '__')"
+            echo "::group::Mermaid: $file"
+            if ! npx --yes @mermaid-js/mermaid-cli@12.0.0 \
+              -p .github/puppeteer-config.json \
+              -i "$file" \
+              -o "$tmp/$slug" \
+              -a "$tmp/artifacts/$slug"; then
+              failed=1
+            fi
+            echo "::endgroup::"
+          done < <(grep -rl --include='*.md' --exclude-dir=.git --exclude-dir=node_modules '^```mermaid' .)
+
+          if [ "$failed" -ne 0 ]; then
+            echo "One or more Mermaid diagrams failed to render."
+            exit 1
+          fi
