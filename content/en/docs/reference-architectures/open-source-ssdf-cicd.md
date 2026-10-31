@@ -151,7 +151,11 @@ flowchart LR
 and its community edition tracks tainted data only within one function; Opengrep, an
 LGPL-2.1 fork of the engine, also tracks it across functions in a file. The SIG lists
 Gitleaks, which now receives security fixes only; Betterleaks is its actively maintained
-successor from the same authors.
+successor from the same authors. Betterleaks 1.x writes a bare JSON array with Gitleaks'
+field names, so a CI run can import through DefectDojo's Gitleaks parser; 2.x, still a
+release candidate, switches to an object envelope and snake_case fields and needs its own
+parser, so pin 1.x for now
+([report changes](https://github.com/betterleaks/betterleaks/blob/main/docs/v2_migration.md#report-changes)).
 
 ‡ Pipelines-as-Code hasn't reached 1.0 and is maintained mainly by Red Hat.
 
