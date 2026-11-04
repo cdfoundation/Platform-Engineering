@@ -59,7 +59,7 @@ representative at an online or offline event.
 ## Enforcement
 
 Instances of abusive, harassing, or otherwise unacceptable behavior may be
-reported to the community leaders responsible for enforcement at conduct@cd.foundation.
+reported to the community leaders responsible for enforcement at <conduct@cd.foundation>.
 
 All complaints will be reviewed and investigated promptly and fairly.
 
@@ -92,7 +92,7 @@ includes avoiding interactions in community spaces as well as external channels
 like social media. Violating these terms may lead to a temporary or permanent
 ban.
 
-> Instances of abusive, harassing, or otherwise unacceptable behavior may be reported by contacting the project team at conduct@cd.foundation.
+> Instances of abusive, harassing, or otherwise unacceptable behavior may be reported by contacting the project team at <conduct@cd.foundation>.
 
 ### 3. Temporary Ban
 
@@ -104,7 +104,6 @@ communication with the community for a specified period of time. No public or
 private interaction with the people involved, including unsolicited interaction
 with those enforcing the Code of Conduct, is allowed during this period.
 Violating these terms may lead to a permanent ban.
-
 
 ### 4. Permanent Ban
 

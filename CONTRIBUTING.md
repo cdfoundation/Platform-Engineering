@@ -5,16 +5,19 @@ Thank you for your interest in contributing to the CDF SIG Platform Engineering.
 ## Ways to Contribute
 
 ### Join the Conversation
+
 - Attend SIG meetings (schedule and connection details in the SIG repository)
 - Join the [CDF Slack workspace](https://join.slack.com/t/cdeliveryfdn/shared_invite/zt-nwc0jjd0-G65oEpv5ynFfPD5oOX5Ogg) and find the SIG Platform Engineering channel *(channel name to be confirmed)*
 - Subscribe to the SIG mailing list at [lists.cd.foundation](https://lists.cd.foundation) *(mailing list pending)*
 
 ### Propose or Discuss Topics
+
 - Open a GitHub issue to propose a new topic, raise a question, or identify a gap in existing content
 - Add agenda items to upcoming meeting notes
 - Share experience reports, case studies, or tooling evaluations relevant to platform engineering
 
 ### Contribute Content
+
 - Review open pull requests and provide feedback
 - Draft new sections for the Platform Engineering Guide
 - Contribute reference architectures, diagrams, or golden path templates
@@ -22,6 +25,7 @@ Thank you for your interest in contributing to the CDF SIG Platform Engineering.
 - Add yourself to the Members list in [README.md](README.md) once you've attended a meeting
 
 ### Present to the SIG
+
 - Give a lightning talk or full presentation on a platform engineering topic at a SIG meeting
 - Share how your organization uses CDF projects in your internal developer platform
 - Demonstrate tooling integrations or proof-of-concept implementations

@@ -1,0 +1,11 @@
+{
+  "globs": ["**/*.md"],
+  "ignores": ["node_modules"],
+  "frontMatter": "^---\\r?\\n([\\s\\S]*?\\r?\\n)?---(\\r?\\n|$)",
+  "config": {
+    "MD013": false,
+    "MD025": {
+      "front_matter_title": ""
+    }
+  }
+}
