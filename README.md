@@ -8,3 +8,4 @@ This repo is for the Platform Engineering Special Interest Group (SIG)
 - Andy Motta (EverOps) @andymotta
 - Liora Milbaum @lmilbaum
 - Joseph Shriner @shrinedogg
+- Steve Fenton @steve-fenton
