@@ -7,3 +7,4 @@ This repo is for the Platform Engineering Special Interest Group (SIG)
 - Tracy Ragan (DeployHub) @Tracy-Ragan
 - Andy Motta (EverOps) @andymotta
 - Liora Milbaum @lmilbaum
+- Joseph Shriner @shrinedogg
