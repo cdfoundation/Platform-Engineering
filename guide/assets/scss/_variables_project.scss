@@ -1,0 +1,18 @@
+// Base Colors
+$primary-color: #1E1F26;  // Dark Blue
+$secondary-color: #2B2D42;  // Slate Gray
+$accent-color: #29ABE2;  // Cyan
+$highlight-color: #A1FFCE;  // Electric Lime
+$alert-color: #FF4C4C;  // Alert Red
+$success-color: #00FF84;  // Bright Green
+
+// Backgrounds and Text
+$background-color: #1C1C1E;  // Dark Gray
+$background-secondary: #333333;  // Lighter Gray
+$text-primary: #FFFFFF;  // White
+$text-secondary: #D1D1D1;  // Muted Gray
+
+// Buttons
+$button-primary-bg: $accent-color;
+$button-primary-text: $text-primary;
+$button-hover-bg: lighten($accent-color, 10%);

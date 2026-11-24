@@ -1,0 +1,318 @@
+
+/* ==========================================
+   CDF PLATFORM ENGINEERING GOLDEN PATH GUIDE
+   Custom Docsy Styles
+   ========================================== */
+
+/* ------------------------------------------
+   NAVBAR LAYOUT
+   Logo: LEFT
+   Title: CENTER
+   Navigation controls: RIGHT
+   ------------------------------------------ */
+
+.td-navbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 64px;
+  width: 100%;
+}
+
+/* Keep the brand container on the left */
+.td-navbar .navbar-brand {
+  position: static;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+  transform: none;
+}
+
+/* Position logo on the far left */
+.td-navbar .navbar-brand__logo {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  z-index: 2;
+}
+
+/* Logo dimensions */
+.navbar-brand__logo.navbar-logo > svg {
+  display: block;
+  height: 40px;
+  width: auto;
+  max-width: none;
+}
+
+/* Center the site title across the navbar */
+.td-navbar .navbar-brand__name {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+  max-width: calc(100% - 650px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  z-index: 1;
+}
+
+/* Keep navigation items on the right */
+.td-navbar .navbar-nav {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+/* Preserve right-side controls */
+.td-navbar__light-dark-menu {
+  display: flex;
+  align-items: center;
+}
+
+/* ------------------------------------------
+   SIDEBAR
+   ------------------------------------------ */
+
+.td-sidebar {
+  margin-bottom: 0rem;
+}
+
+#td-sidebar-menu {
+  max-height: calc(100vh - 64px);
+  overflow-y: auto;
+}
+
+.td-sidebar-toc {
+  position: sticky;
+  top: 4rem;
+  overflow-y: auto;
+}
+
+/* ------------------------------------------
+   CONTENT SPACING
+   ------------------------------------------ */
+
+.td-content {
+  margin-top: 64px;
+}
+
+.td-block-padding {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+/* ------------------------------------------
+   TYPOGRAPHY FIXES (Docsy-safe)
+   ------------------------------------------ */
+
+/* Restore paragraph spacing */
+.td-content p {
+  margin-bottom: 1.25rem;
+}
+
+/* Keep lists tight but readable */
+.td-content ul,
+.td-content ol {
+  margin-bottom: 1.25rem;
+  padding-left: 1.25rem;
+}
+
+.td-content li {
+  margin-bottom: 0.25rem;
+}
+
+/* Tables should not collapse spacing */
+.td-content td,
+.td-content th {
+  padding: 0.5rem 0.75rem;
+}
+
+/* ------------------------------------------
+   COLORS / FOOTER
+   ------------------------------------------ */
+
+.td-box--orange {
+  color: #242325;
+}
+
+.td-footer {
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+/* ------------------------------------------
+   WIDTH & RESPONSIVE
+   ------------------------------------------ */
+
+@media (min-width: 992px) {
+  .td-content > .lead,
+  .td-content > p,
+  .td-content > table {
+    max-width: 95%;
+  }
+}
+
+/* ------------------------------------------
+   TABLET NAVIGATION
+   ------------------------------------------ */
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+  .td-navbar .navbar-brand__logo {
+    left: 12px;
+  }
+
+  .navbar-brand__logo.navbar-logo > svg {
+    height: 36px;
+  }
+
+  .td-navbar .navbar-brand__name {
+    font-size: 0.95rem;
+    max-width: 40%;
+  }
+}
+
+/* ------------------------------------------
+   MOBILE NAVIGATION
+   ------------------------------------------ */
+
+@media (max-width: 767px) {
+
+  nav.td-navbar {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    min-height: 100px;
+    height: 100px;
+  }
+
+  /* Logo remains on the left */
+  .td-navbar .navbar-brand__logo {
+    position: absolute;
+    left: 12px;
+    top: 25px;
+    transform: translateY(-50%);
+    margin: 0;
+  }
+
+  .navbar-brand__logo.navbar-logo > svg {
+    height: 32px;
+    width: auto;
+  }
+
+  /* Center title independently */
+  .td-navbar .navbar-brand__name {
+    position: absolute;
+    left: 50%;
+    top: 25px;
+    transform: translate(-50%, -50%);
+    font-size: 0.85rem;
+    font-weight: 600;
+    max-width: calc(100% - 180px);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+  }
+
+  .td-navbar .navbar-brand {
+    position: static;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Right-side navigation */
+  .td-navbar .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: auto;
+    padding: 0;
+  }
+
+  .td-content {
+    margin-top: 0;
+  }
+
+  .td-block-padding,
+  .td-default main section {
+    padding-top: 42px;
+    padding-bottom: 42px;
+  }
+}
+
+/* ------------------------------------------
+   THEME TOGGLE
+   ------------------------------------------ */
+
+/*
+  Preserve the Raven navbar brand and
+  theme toggle in light and dark modes.
+*/
+
+.td-navbar__light-dark-menu {
+  display: flex;
+  align-items: center;
+}
+
+.td-theme-toggle {
+  // Match other navbar links in every
+  // Bootstrap button state.
+
+  --bs-btn-color: var(--bs-nav-link-color);
+  --bs-btn-hover-color: var(--bs-nav-link-hover-color);
+  --bs-btn-active-color: var(--bs-nav-link-hover-color);
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: .375rem .5rem;
+  color: var(--bs-btn-color);
+  line-height: 1;
+  background: none;
+  border: none;
+
+  &:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 2px;
+  }
+}
+
+.td-theme-toggle__icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  stroke: currentColor;
+  fill: none;
+}
+
+.td-theme-toggle__icon--sun {
+  display: none;
+}
+
+html[data-bs-theme="dark"]
+.td-theme-toggle__icon--sun {
+  display: inline-block;
+}
+
+html[data-bs-theme="dark"]
+.td-theme-toggle__icon--moon {
+  display: none;
+}
